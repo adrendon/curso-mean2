@@ -13,6 +13,7 @@ function getAlbum(req, res){
 
     Album.findById(albumId).populate({path: 'artist'}).exec((err, album) => {
         if(err){
+            //mensaje de error
              res.status(500).send({message: 'Error en la petición'});
         }else{
             if(!album){
