@@ -146,7 +146,6 @@ function UploadImage(req, res){
     }
 }
 
-
 function getImageFile(req, res) {
     var imageFile = req.params.imageFile;
     var path_file = './uploads/albums/'+imageFile;
